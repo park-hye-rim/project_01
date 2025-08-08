@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고객의 소리</title>
+    <style>
+      body{
+        font-family: "IBM Plex Sans KR", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      a{
+        text-decoration: none;
+        color: black;
+      }
+      
+      ul{
+        list-style: none;
+        text-align: center;
+        clear: both;
+        border: 1px , solid blue;
+        padding: 20px;
+
+      }
+
+      li{
+        display: inline;
+        margin: 50px;
+        border: 1px, solid red;
+        padding: 15px;
+      }
+
+    
+    
+    
+    
+    
+    </style>
+</head>
+<body>
+    <!-- 상단로고 및 간편기능 -->
+      <a href="https://www.theborn.co.kr/">
+        <img src="./flogo.png" alt="theborn">
+      </a> 
+
+     <!-- 메뉴구성 -->
+      <ul>
+        <li><a href="">더본코리아</a></li>
+        <li><a href="">브랜드</a></li>
+        <li><a href="">매장찾기</a></li>
+        <li><a href="">창업센터</a></li>
+        <li><a href="">더본소식</a></li>
+        <li><a href="">고객의소리</a></li>
+      </ul>
+      
+        <br>
+
+    <!-- 메인배너 -->
+     <img src="./sub_header_bg05.jpg" alt="sud_header"><br>
+
+     <!-- 중간 타이틀 -->
+      <p>고객의 소리</p>
+
+      <hr>
+
+      <span>🏛 > 고객센터 > 고객의 소리</span><br><br>
+
+      <h2>고객의 소리</h2>
+      <p>
+        더본코리아에 전하고 싶은 불만, 칭잔을 보내주세요. 항상 고객님들의 목소리에 귀 기울이겠습니다.
+      </p>
+    
+      <!-- 본문내용_브랜드명 -->
+
+    <hr>
+    <span>브랜드명</span>
+     <input type="radio" name="text"> <span>국내</span>
+     <input type="radio" name="text"> <span>국내</span>
+     <select>
+      <option>브랜드를 선택해주세요</option>
+      <option>롤링파스타</option>
+      <option>막이오름</option>
+      <option>연돈불카츠</option>
+      <option>뺵보이피자</option>
+     </select>
+     
+     <br><br>
+      <!-- 본문내용_매장명 -->
+     <span>매장명</span>
+     <input type="text">
+     <input type="submit" value="매장찾기">
+
+     <br><br>
+
+     <!-- 본문내용 문의유형 -->
+     <span>문의유형</span>
+     <select>
+      <option>--대분류--</option>
+      <option>칭찬</option>
+      <option>불만</option>
+      <option>문의</option>
+      <option>제안</option>
+    </select>
+     
+     <select>
+      <option>--중분류--</option>
+      <option>제공</option>
+      <option>응대서비스</option>
+      <option>매장환경</option>
+      <option>청결/위생</option>
+     </select>
+
+     <select>
+      <option>--소분류--</option>
+      <option>제공</option>
+     </select>
+
+     <br><br>
+
+     <!-- 본문내용 이용경로 -->
+     <span>이용경로</span>
+     <input type="radio" name="text"> <span>매장방문</span>
+     <input type="radio" name="text"> <span>매장방문 외</span>
+      <blockquote>방문일 : <input type="date"> </blockquote>
+      <blockquote>결제시간 : <input>
+        <select>
+            <option>직접입력</option>
+            <option>10시</option>
+            <option>11시</option>
+            <option>12시</option>
+            <option>13시</option>
+            <option>14시</option>
+            <option>15시</option>
+            <option>16시</option>
+            <option>17시</option>
+          </select>
+      </blockquote>
+      <blockquote>주문메뉴 : <input type="text"> </blockquote>
+
+      <br>
+
+     <!--답변 알림 서비스 -->
+     <span>답변 알림 서비스</span>
+     <input type="radio" name="text"> <span>받지않음</span>
+     <input type="radio" name="text"> <span>문자 답변</span>
+     <input type="radio" name="text"> <span>이메일 답변</span>
+     <input type="radio" name="text"> <span>전화 답변</span>
+     
+     <br><br>
+
+     <!-- 성함 -->
+     <span>성함</span>
+     <input name="text">
+      
+     <br><br>
+
+     <!-- 휴대폰 -->
+     <span>휴대폰</span>
+     <input type="number" name="[0-9]">
+          
+     <br><br>
+
+     <!-- 이메일 -->
+     <span>이메일</span>
+     <input type="email" name="email"> @ <input type="email" name="email">
+     <select>
+            <option>직접입력</option>
+      </select>
+        
+      <br><br>
+
+     <!-- 제목 -->
+     <span>제목</span>
+     <input type="text" name="text">  
+
+      <br><br>
+
+     <!-- 내용 -->
+     <span>내용</span>
+     <textarea>
+
+     </textarea>
+     
+     <br>
+      
+     <span>현재 0 / 최대 4000byte(한글2000자, 영문 4000자)</span>
+     
+     <hr>
+<pre>
+  <input type="checkbox"> 개인정보 수집•이용 동의(필수)
+  귀하께서는 개인정보 수집·이용에 대한 동의를 거부하실 수 있으나, 동의를 거부하실 경우 고객의 소리 서비스를 이용 할 수 없습니다.
+
+  - 개인정보처리자 : (주)더본코리아
+
+  - 개인정보항목 : 이름, 휴대폰번호, 이메일, 고객 상담을 위해 제공한 정보
+
+  - 목적 : 고객 고충 및 불만에 대한 처리
+
+  <b>- 보유 및 이용기간 : 전자상거래 등에서의 소비자 보호에 관한 법률 </b>
+
+  <b>◎ 소비자의 불만 또는 분쟁처리에 관한 기록 : 3년</b>
+
+  - 고객이 동의한 개인정보처리 방침에 따라 고객의소리 민원 처리를 위해 작성자의 개인정보를 활용할 수 있습니다.
+
+  - 기재오류 및 계정문제가 발생한 경우에는 답변이 불가능 할 수 있음으로 연락처 및 메일 주소를 정확하게 기입해 주시길 바랍니다.
+
+  - 답변은 직접 선택해주신 방법으로 진행되며, 추가적인 확인이 필요한 경우에는 선택해주신 답변 외 별도의 방법으로 연락드릴 수 있는점 양해 바랍니다.
+
+  - 관련 법령에 저촉되거나 사회통념 등에 어긋나는 내용 (예:욕설 및 비속어, 비방어 등 부적절한 단어가 포함되는 경우, 개인정보보안, 불충분한 증거/귀책 사유에 대한 개인 음해성/음란성 비방, 의도적인 업무방해 등) 또는 광고성 게시물은 별도 사전 통보 없이 답변되지 않을 수 있으며, 등록된 의견은 수정이 불가하오니 이점 양지하여 주시기 바랍니다.
+
+  - 공정거래위원회에서 고지한 소비자분쟁해결 기준에 의거하여 소비자 피해에 대해 교환 또는 환불 처리 해드립니다.
+</pre>
+
+  <il>
+    <a href="">약관보기</a>
+  </il>
+
+  <br>
+
+<button>보내기</button>
+<button>취소</button>
+
+ <br><br><br>
+
+ <hr>
+     <img src="./footer_logo_.jpg">
+    <select>
+      <option selected disabled hidden>패밀리 사이트 바로가기</option>
+      <option >새마을 식당</option>
+      <option >한신포차</option>
+      <option >역전우동</option>
+      <option >원조쌈밥집</option>
+    </select>
+
+    <pre>
+        <b>개인정보처리방침 | 상생경영 | 사이트맵 | 채용</b>
+        (주) 더본 코리아 | 사업자등록번호211-66-00870 | 대표이사 백종원
+        주소 : 서울시 강만구 봉은새로 1길 39 유성빌딩 5~6층 | 팩스 : 02-511-3864
+        본사 대표전화 및 가맹상담전화: 02-549-3864 | 뺵다방 가맹상담전화 : 02-3447-0410
+        고객센터 :1544-2360 | 제휴문의 : cs@theborn.co.kr
+    </pre>
+        <blockquote>
+          COPYRIGHTⓒ 2018 THEBORN KOREA INC. ALL RIGHTS RESERVED
+        </blockquote>
+</html>

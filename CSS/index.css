@@ -1,0 +1,317 @@
+/* header 영역 */ 
+  body{
+    font-family: "IBM Plex Sans KR", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px;
+    padding: 0px;
+    width: 1900px;
+    border: 1px solid red;
+  } 
+
+  a{
+      text-decoration: none;
+      color:black;
+      font-size: 20px;
+  }
+
+  /* 헤더 - 고정, flex와 inline-block */
+  header{
+      width: 1900px;
+      height: 100px;
+      position: fixed;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background-color: white;
+      padding-top: 20px;
+      z-index:50;
+    }
+    /* 오른쪽 세부 - 간단메뉴 */
+    #sub_logo{
+        text-align: right;
+    }
+
+    #sub_logo img{
+        width:30px; vertical-align: middle; padding-left:10px;
+    }
+    /* 오른쪽 상단 - 메인메뉴   추가 */
+      #sub_menu{
+        list-style: none;
+        padding:0;
+        margin: 0;
+        display: flex;
+        gap:40px;
+    }
+    #sub_menu > li{
+        font-family: 'ChosunGu';
+        font-weight:bold;
+        margin-top: 10px;
+        position: relative;
+    }
+
+    /* 메인메뉴 하단 서브 리스트 */
+    .sub_list{
+        list-style: none;
+        display: none;
+        padding:0;
+        position: absolute;
+        top:50px;
+        left:0;
+        width: 250px;
+    }
+
+    #sub_menu > li:hover .sub_list{
+        display: block;
+    }
+
+    /* 메인베너 및 fixed 채널*/
+    section{
+        padding-top:120px;
+    }
+    section img{
+        width:100%;
+    }
+    #fixed_channel{
+        position: fixed;
+        top:200px;
+        right:300px;
+        z-index:100;
+    }
+
+    #fixed_channe2{
+        position: fixed;
+        top:360px;
+        right:300px;
+        z-index:100
+    }
+
+    /* 베너구성  - 이미지에 텍스트 넣기*/
+    @font-face {
+        font-family: 'SBAggroB';
+        src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    h1,h2{
+        font-family:'SBAggroB' ;
+    }
+    .wrap_01{
+        width: 50%; height: 350px;
+        position: relative;
+        /* display: inline-block; */
+        float: left;
+    }
+    .wrap_01 img{
+        width: 100%; height: 350px;
+    }
+    .wrap_01 h1{
+        position: absolute;
+        top:0px;
+        left:20px;
+    }
+
+    .wrap_01 p{
+        position: absolute;
+        top:100px;
+        left:20px;
+    }
+
+    .wrap_02 h1{
+        position: absolute;
+        top:360px;
+        left:20px;
+    }
+
+    .wrap_02 p{
+        position: absolute;
+        top:458px;
+        left:20px;
+    }
+
+    .wrap_02 hr{
+        position: absolute;
+        top:458px;
+        left:20px;
+        width: 40px;
+        border: 1px solid #6b4d30;
+    }
+
+     .wrap_03 h1{
+        position: absolute;
+        top:360px;
+        left:20px;
+    }
+
+    .wrap_03 p{
+        position: absolute;
+        top:458px;
+        left:20px;
+    }
+
+    .wrap_03 hr{
+        position: absolute;
+        top:458px;
+        left:20px;
+        width: 40px;
+        border: 1px solid #6b4d30;
+    }
+
+     .wrap_04 h1{
+        position: absolute;
+        top:360px;
+        left:20px;
+    }
+
+    .wrap_04 p{
+        position: absolute;
+        top:458px;
+        left:20px;
+    }
+
+    .wrap_04 hr{
+        position: absolute;
+        top:458px;
+        left:20px;
+        width: 40px;
+        border: 1px solid #6b4d30;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* 이미지 배치 */
+    .sec_03 img{
+        width:50%; height: 400px;
+        float: left;
+    }
+
+    /* 이미지 혼합 배치 */
+    .sec_final{
+        clear: both;
+        margin-left: 130px;
+        display: flex;
+    }
+    .text_banner img{
+        display: block;
+    }   
+    #wrap{
+        position: relative;
+        width: 550px;
+    }
+    .box{
+        width: 500px;
+        height: 300px;
+        border: 4px solid rgb(12, 12, 133);
+        padding-left: 50px;
+    }
+    .store{
+        position: absolute;
+        left:50px;
+        bottom: 40px;
+    }
+    .main_sec6{
+        width: 250px;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+    }
+
+    /*푸터 */
+    #footer{
+        width:1440px;
+        background-color: white;
+    }
+    .bottom{
+        border: 3px solid rgb(238, 238, 7);
+    }
+    footer{
+        text-align: center;
+    }
+    .f_info{
+        margin-top: 20px;
+    }
+    select{
+        float: right;
+        margin-right:200px;
+    } 
+
+    /* 이미지 중복배치 및 호버효과 */
+    .image-container {
+        position: relative; width: 100%; width: 1900px;
+    }
+    .main-image {
+        width:1900PX; display: block;
+    }
+    /* 아이콘 묶음 */
+    .icon-wrapper {
+        position: absolute;
+        bottom: 30px; left: 30px;
+        width: 60px; height: 60px;
+    }
+    /* 기본 아이콘은 항상 보임 */
+    .icon-base {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%; z-index: 1;
+    }
+    /* hover 아이콘은 처음엔 투명, hover 시 보이게 */
+    .icon-hover {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        opacity: 0; z-index: 2;
+    }
+    .icon-wrapper:hover .icon-hover {
+        opacity: 1;
+    }
+
+    /* 변형 */
+    .sec_03 img:hover{
+        transform: scale(1.02);
+        transition: transform 1.2s ease;
+    }
+
+
+
+    swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #444;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+      
+
+      #footer{
+          width: 1920px;
+          position: fixed;
+          bottom: 0;
+          left: 0;
+        }
